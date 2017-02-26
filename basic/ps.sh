@@ -4,4 +4,7 @@ ps -u $1
 if [ $# == 2 ]
 then
 kill $2
+else if [ $? != 0 ]
+then 
+echo "wrong command"
 fi

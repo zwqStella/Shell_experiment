@@ -11,3 +11,7 @@ str2="You are a handsome boy."
 fi
 echo $str1
 echo $str2
+unset str1
+unset str2
+unset f
+exit 0

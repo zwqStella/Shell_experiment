@@ -8,3 +8,4 @@ elif [ $? != 0 ]
 then
 echo "wrong command"
 fi
+exit 0

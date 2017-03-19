@@ -1,4 +1,10 @@
 #/bin/bash
+if [ ! -d "/tomcat" ]; then
+    mkdir /tomcat
+else
+    rm -r /tomcat
+    mkdir /tomcat
+fi
 wget -q -P /tomcat http://mirror.bit.edu.cn/apache/tomcat/tomcat-8/v8.5.11/bin/apache-tomcat-8.5.11.tar.gz
 cd /tomcat
 tar -xzvf apache-tomcat-8.5.11.tar.gz
